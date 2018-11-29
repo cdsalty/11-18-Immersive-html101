@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>PLACES TO VISIT IN GEORGIA</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    
+    <!-- div (with no '.' and no #) targets a tag
+    # will target an id
+    '.'  will target a class -->
+    
+    <style>
+        /* #gallery-wrapper{} THIS WILL LOOK FOR THE THING WITH THE ID 'GALLARY WRAPPER' */
+        #gallery-wrapper{
+            border: solid red 2px;
+            text-align: center;
+        }
+        #top-section{
+            border: solid blue 2px
+        }
+        #middle-section{
+            border: solid /*could also use dash, solid,*/ black /*this will set the future divs stying.*/}
+        
+        #bottom-section{
+            border: solid green 2px
+        }
+        .thumb{  /* will find a class; it says, go find 'thumb'.*/
+            width: 15%; /*always try and use percentage since you don't know the user's screen size.*/
+        }
+        img{
+            width: 1000px;
+        }
+    </style>
+</head>
+<body>
+    <!-- A wrapper for the entire gallery. The div does nothing but help us organize our content. -->
+
+    <div id='gallery-wrapper'>
+        <div id='top-section'>
+        <h1> A photo gallery made with HTML, CSS and tiny bit of JS. PLUS a whole lotta love </h1>
+        </div>
+
+    <div id='middle-section' >
+        <!-- an id is unique on a page; an id is like a serial number ONLY one-->
+        <!-- a class is NOT unique, but groups things in; you can have as many as you want. -->
+        <h2>Middle Section</h2>
+        <img class="thumb" src="./arabia_mnt.jpg" onclick='bigImage.src =this.src' /> Grab this src and change the source, 
+            <img class="thumb" src="./callaway_gardens.jpg" onmouseover='bigImage.src = this.src' />
+            <img class="thumb" src="./Etowah_Indian_Mounds.jpg" />
+            <img class="thumb" src="./prov_state_canyon.jpg" />
+            <img class="thumb" src="./wormsloe.jpg" />
+    </div>
+<!-- REMEMBER the '.' before ./wormsloe... is where the file is found-->
+    <div id='bottom-section'>
+        <img src='./prov_state_canyon.jpg' name='bigImage'/>
+    </div>
+</div>
+</body>
+</html>
