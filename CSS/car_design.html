@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>CarDesign using CSS</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    
+    <style>
+    * {
+        background-color: lightskyblue;
+        /* padding: 0;
+        margin: 0; */
+    }
+    
+    #wheel_1{
+        background-color: black;
+        position: absolute;
+        width: 200px;
+        height: 200px;
+        top: 300px;
+        left: 20px;
+        border-radius: 50%;
+    }
+    #rim_1{
+        background-color: gray;
+        position: absolute;
+        width: 70px;
+        height: 70px;
+        left: 63px;
+        top: 65px;
+        border-radius: 50%;
+    }
+    #wheel_2{
+        background-color: black;
+        position: absolute;
+        width: 200px;
+        height: 200px;
+        top: 300px;
+        left: 400px;
+        border-radius: 50%;
+    }
+    #rim_2{
+        background-color: gray;
+        position: absolute;
+        width: 70px;
+        height: 70px;
+        left: 67px;
+        top: 65px;
+        border-radius: 50%;  
+    }
+
+    #car_body{
+        background-color: brown;
+        position: absolute;
+        height: 142px;
+        width: 601px;
+        top: 261px;
+    }
+    
+    #car_top{
+        background-color: silver;
+        position: absolute;    /* does everything have to be set to a position? I don't know when to use what but I have to use it on all */
+        height: 142px; 
+        width: 159px;    /* used inside of having the right property? */
+        left: 275px;
+        border: solid black 2px;
+        /* right: 80px; */     /* why was I not able to use right? */
+        top: 156px;
+    }  
+
+
+    </style>
+
+</head>
+<body>
+    <div id="wheel_1">
+        <div id="rim_1">
+        </div>
+    </div>
+
+    <div id="wheel_2">
+        <div id='rim_2'>
+        </div>
+    </div>
+
+    <div id="car_body">
+    </div>
+
+    <div id="car_top">
+        <div id="widow">
+        </div>
+    </div>
+</body>
+</html>
+
+
+<!-- THESE ARE OTHER OPTIONS AFTER GOING BACK TO REVIEW NOTES: -->
+
+<!-- <div id='block-wrapper'>
+        <div id='block1' class='block'></div> These are now id's and not classes so you will use a hashtag to find it
+        <div id='block2' class='block'></div> by assigning a class, we can call specifics by using the class of 'block'
+        <div id='block3' class='block'></div>
+    </div> -->
+
+
+    <!-- Triangles:
+    https://www.youtube.com/watch?v=IMnYzR0zX0c -->
